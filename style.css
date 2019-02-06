@@ -1922,7 +1922,7 @@ Primary use:	Showcase Portfolio
 		height: 40px;
 		line-height:40px;
 		float: left;
-		color:#000;
+		color:#fff;
 		font-size:12px;
 		font-weight:600;
 	}
@@ -1964,116 +1964,6 @@ Primary use:	Showcase Portfolio
 
 	.light-content #counter-wrap:after {
 		background-color: rgba(255,255,255,0.3);
-	}
-
-	.copyright-wrap {
-		position:relative;
-		float: left;
-		color: #000;
-		width: 270px;
-		height: 80px;
-		box-sizing: border-box;
-		pointer-events:initial;
-		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-	}
-
-	.light-content .copyright-wrap {
-		color: #fff;
-	}
-
-	.copyright-wrap:hover {
-		transform: translateY(-50px);
-		-webkit-transform: translateY(-50px);
-	}
-
-	.copyright-text {
-		float: left;
-		font-size: 12px;
-		font-weight: 600;
-		font-family: 'Poppins', sans-serif;
-		line-height: 40px;
-	}
-
-	.copyright-icon {
-		float: left;
-		width: 30px;
-		height: 40px;
-		font-size: 12px;
-		line-height: 40px;
-		text-align: left;
-		margin-right: 0px;
-		transform: scale(1);
-		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-	}
-
-	.copyright-icon i{
-		font-size:13px;
-	}
-
-	.copyright-wrap:hover .copyright-icon {
-		transform:scale(0);
-		width:0;
-		margin:0;
-		overflow:hidden;
-
-	}
-
-	.copyright-icon:after, .copyright-text:after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-
-	.copyright {
-		height: auto;
-		line-height: 30px;
-		position: relative;
-		width: auto;
-		margin:0 auto;
-		margin-top: 10px;
-		text-align: center;
-		bottom: 0;
-		display: table;
-	}
-
-	.copyright-wrap .copyright {
-		display: inline-block;
-		width: 100%;
-		text-align: left;
-	}
-
-	.copyright p {
-		color: #000;
-		font-size: 12px;
-		font-weight: 600;
-		margin-bottom: 0;
-		line-height: 30px;
-		box-sizing:border-box;
-		padding-top:5px;
-		position: relative;
-		height: 40px;
-		float: left;
-		z-index: 2;
-		-webkit-transition: background 0.4s ease-in-out 0s;
-		transition: background 0.4s ease-in-out 0s;
-	}
-
-	.light-content .copyright p {
-		color: #fff;
-	}
-
-	.copyright-wrap .copyright p {
-		opacity:0;
-		transform: translateY(10px);
-		-webkit-transform: translateY(10px);
-		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-	}
-
-	.copyright-wrap:hover .copyright p {
-		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
-		opacity:1;
-		transform: translateY(0px);
-		-webkit-transform: translateY(0px);
 	}
 
 	.socials-wrap {
