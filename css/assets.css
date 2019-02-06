@@ -1620,12 +1620,13 @@ button.swiper-pagination-bullet {
 		color: #FFF
 	}
 
-	.socials{
-		color: #FFF
-	}
 
-	.parallax-wrap{
-		color: #FFF
+/*--------------------------------------------------
+	Slide Count
+---------------------------------------------------*/
+
+	.slide-count{
+		color: #FFF;
 	}
 
 
