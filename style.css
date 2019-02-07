@@ -474,6 +474,20 @@ Primary use:	Showcase Portfolio
 		line-height: 18px;
 	}
 
+	h7 {
+		font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 11px;
+    line-height: 1;
+    font-family: Montserrat;
+		margin-bottom: 100px;
+	}
+
 	.light-content h1, .light-content h2, .light-content h3, .light-content h4, .light-content h5, .light-content h6 {
 		color: #fff!important;
 	}
