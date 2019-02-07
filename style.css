@@ -678,7 +678,13 @@ Primary use:	Showcase Portfolio
 		padding-bottom:100px;
 	}
 
+	.dib{
+		display: inline-block;
+	}
 
+	.icon{
+		
+	}
 /*--------------------------------------------------
 	02. Magic Cursor
 ---------------------------------------------------*/
