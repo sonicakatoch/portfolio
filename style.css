@@ -683,7 +683,11 @@ Primary use:	Showcase Portfolio
 	}
 
 	.icon{
-		
+		height: 3rem;
+		height: 2rem;
+		vertical-align: middle;
+		padding-bottom: .5rem;
+		padding-left: .5rem;
 	}
 /*--------------------------------------------------
 	02. Magic Cursor
