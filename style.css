@@ -1872,6 +1872,8 @@ Primary use:	Showcase Portfolio
 	#main {
 		position:relative;
 		opacity:0;
+		height: 100%;
+    min-height: 100vh; 
 	}
 
 	.load-project-page #main, .load-next-project #main {
