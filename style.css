@@ -31,7 +31,7 @@ Primary use:	Showcase Portfolio
 ---------------------------------------------------*/
 
 	html,body{
-		font-family: 'Poppins', sans-serif;
+		font-family: 'ClashGrotesk-Bold', sans-serif;
 		font-weight: 300;
 		font-size:14px;
 		height:100%;
@@ -39,6 +39,40 @@ Primary use:	Showcase Portfolio
 		color:#999;
 		background-color:#FFF;
 	}
+
+	/* @font-face {
+		font-family: Millimetre-Extrablack;
+		src: url("fonts/Millimetre-Extrablack.otf") format("opentype");
+} */
+
+@font-face {
+	font-family: ClashGrotesk-Bold;
+	src: url("fonts/ClashGrotesk-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Format_1452;
+	src: url("fonts/Format_1452.otf") format("opentype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	color:#000;
+	margin-bottom:10px;
+}
+
+h2, h3, h4, h5, h6, p, .slide-caption {
+	font-family: Format_1452, sans-serif;
+	text-transform: uppercase;
+}
+
+.centered-slider .slide-caption {
+	font-size: 18px;
+}
+
+.hero-subtitle {
+	font-size: 18px;
+}
 
 	html {
 		box-sizing: border-box;
@@ -76,6 +110,14 @@ Primary use:	Showcase Portfolio
 	section {
 		display: block;
 	}
+
+	.icon{
+			height: 3rem;
+			height: 2rem;
+			vertical-align: middle;
+			padding-bottom: .5rem;
+			padding-left: .5rem;
+		}
 
 	audio,
 	 {
@@ -294,11 +336,15 @@ Primary use:	Showcase Portfolio
 	}
 
 	figcaption {
-		background-color: rgba(0,0,0,1);
+		background-color: #000;
+		/* outline-color: #35FF69;
+		outline-style: solid;
+		outline-width: thin; */
 		bottom: 25px;
 		color: #fff;
 		font-weight:400;
 		font-size: 12px;
+
 		padding: 10px 20px;
 		position: absolute;
 		right: 25px;
@@ -427,12 +473,6 @@ Primary use:	Showcase Portfolio
 		vertical-align: middle;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 600;
-		color:#000;
-		margin-bottom:10px;
-	}
-
 	h1.big-title{
 		font-size: 80px;
 		font-style: normal;
@@ -475,14 +515,12 @@ Primary use:	Showcase Portfolio
 	}
 
 	h7{
-    font-weight: 100;
-    font-stretch: normal;
-    font-size: 11px;
-    line-height: 0;
-    font-family: Montserrat, sans-serif;
-		margin-bottom: 8px;
-
+		font-size:18px;
+		line-height: 24px;
+		margin-left:-1px;
+		color: #35FF69;
 	}
+
 
 	.light-content h1, .light-content h2, .light-content h3, .light-content h4, .light-content h5, .light-content h6 {
 		color: #fff!important;
@@ -686,18 +724,6 @@ Primary use:	Showcase Portfolio
 
 	.row_padding_bottom {
 		padding-bottom:100px;
-	}
-
-	.dib{
-		display: inline-block;
-	}
-
-	.icon{
-		height: 3rem;
-		height: 2rem;
-		vertical-align: middle;
-		padding-bottom: .5rem;
-		padding-left: .5rem;
 	}
 
 
@@ -989,7 +1015,7 @@ Primary use:	Showcase Portfolio
 
 	#logo img {
 		display: block;
-		height: 60px;
+		height: 100px;
 		width: auto;
 		max-width:none;
 	}
@@ -1602,7 +1628,6 @@ Primary use:	Showcase Portfolio
 	}
 
 	.hero-subtitle {
-		font-size:12px;
 		font-weight:600;
 		line-height:20px;
 		margin-bottom:0px;
@@ -1872,8 +1897,6 @@ Primary use:	Showcase Portfolio
 	#main {
 		position:relative;
 		opacity:0;
-		height: 100%;
-    min-height: 100vh;
 	}
 
 	.load-project-page #main, .load-next-project #main {
@@ -1946,7 +1969,7 @@ Primary use:	Showcase Portfolio
 		height: 40px;
 		line-height:40px;
 		float: left;
-		color:#fff;
+		color:#000;
 		font-size:12px;
 		font-weight:600;
 	}
@@ -1990,6 +2013,116 @@ Primary use:	Showcase Portfolio
 		background-color: rgba(255,255,255,0.3);
 	}
 
+	.copyright-wrap {
+		position:relative;
+		float: left;
+		color: #000;
+		width: 270px;
+		height: 80px;
+		box-sizing: border-box;
+		pointer-events:initial;
+		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	}
+
+	.light-content .copyright-wrap {
+		color: #fff;
+	}
+
+	.copyright-wrap:hover {
+		transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+	}
+
+	.copyright-text {
+		float: left;
+		font-size: 12px;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+		line-height: 40px;
+	}
+
+	.copyright-icon {
+		float: left;
+		width: 30px;
+		height: 40px;
+		font-size: 12px;
+		line-height: 40px;
+		text-align: left;
+		margin-right: 0px;
+		transform: scale(1);
+		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	}
+
+	.copyright-icon i{
+		font-size:13px;
+	}
+
+	.copyright-wrap:hover .copyright-icon {
+		transform:scale(0);
+		width:0;
+		margin:0;
+		overflow:hidden;
+
+	}
+
+	.copyright-icon:after, .copyright-text:after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	.copyright {
+		height: auto;
+		line-height: 30px;
+		position: relative;
+		width: auto;
+		margin:0 auto;
+		margin-top: 10px;
+		text-align: center;
+		bottom: 0;
+		display: table;
+	}
+
+	.copyright-wrap .copyright {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+
+	.copyright p {
+		color: #000;
+		font-size: 12px;
+		font-weight: 600;
+		margin-bottom: 0;
+		line-height: 30px;
+		box-sizing:border-box;
+		padding-top:5px;
+		position: relative;
+		height: 40px;
+		float: left;
+		z-index: 2;
+		-webkit-transition: background 0.4s ease-in-out 0s;
+		transition: background 0.4s ease-in-out 0s;
+	}
+
+	.light-content .copyright p {
+		color: #fff;
+	}
+
+	.copyright-wrap .copyright p {
+		opacity:0;
+		transform: translateY(10px);
+		-webkit-transform: translateY(10px);
+		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	}
+
+	.copyright-wrap:hover .copyright p {
+		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+		opacity:1;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+
 	.socials-wrap {
 		position:relative;
 		float: right;
@@ -2020,7 +2153,6 @@ Primary use:	Showcase Portfolio
 		font-weight: 600;
 		font-family: 'Poppins', sans-serif;
 		line-height:40px;
-		color: #fff;
 	}
 
 	.socials-icon {
@@ -2033,7 +2165,6 @@ Primary use:	Showcase Portfolio
 		margin-left:10px;
 		transform:scale(1);
 		transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-		color: #fff;
 	}
 
 	.socials-wrap:hover .socials-icon {
@@ -2130,7 +2261,7 @@ Primary use:	Showcase Portfolio
 	}
 
 	.socials li a {
-		color: #fff;
+		color: #000;
 		font-size:12px;
 		font-weight: 600;
 		display: block;
@@ -2148,7 +2279,7 @@ Primary use:	Showcase Portfolio
 	}
 
 	.socials li a:hover {
-		color: #fff;
+		color: #000;
 		opacity:1;
 	}
 
@@ -2621,6 +2752,35 @@ Primary use:	Showcase Portfolio
 		margin: 10px auto;
     	min-height: 40px;
 		height:auto;
+	}
+
+	.copyright-wrap {
+		height:40px;
+		width:100%;
+		float:none;
+	}
+
+	.copyright-wrap:hover {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+
+	.copyright-icon, .copyright-text {
+		display:none;
+	}
+
+	.copyright {
+		margin-top: 0px;
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+	}
+
+	.copyright-wrap .copyright p {
+		opacity: 1;
+		float:none;
+		text-align:center;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
 	}
 
 	.socials-wrap {
